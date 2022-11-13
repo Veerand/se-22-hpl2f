@@ -1,0 +1,148 @@
+.container {  display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(6, 1fr);
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    grid-template-areas:
+      "top top top"
+      "intro intro intro"
+      "sauce1 sauce2 sauce3"
+      "sauce4 sauce5 sauce6"
+      "sauce7 sauce8 sauce9"
+      "bottom bottom bottom"
+      
+      ;
+  }
+  
+  
+  .sauce1 {  display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 0.3fr 0.5fr 2.2fr;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    grid-template-areas:
+      "picture Name Name"
+      "picture stars stars"
+      "picture text text";
+    grid-area: sauce1;
+   /*  border: 15px solid black; */
+  }
+  
+  .picture { grid-area: picture; }
+  
+  .Name { grid-area: Name; }
+  
+  .stars { grid-area: stars; }
+  
+  .text { grid-area: text; }
+  
+  .sauce2 {  display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 0.3fr 0.5fr 2.2fr;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    grid-template-areas:
+      "picture name name"
+      "picture stars stars"
+      "picture text text";
+    grid-area: sauce2;
+  }
+  
+
+  
+  .sauce3 {  display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 0.3fr 0.5fr 2.2fr;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    grid-template-areas:
+      "picture name name"
+      "picture stars stars"
+      "picture text text";
+    grid-area: sauce3;
+  }
+  
+
+  
+  .sauce4 {  display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 0.3fr 0.5fr 2.2fr;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    grid-template-areas:
+      "picture name name"
+      "picture stars stars"
+      "picture text text";
+    grid-area: sauce4;
+  }
+  
+
+  
+  .sauce5 {  display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 0.3fr 0.5fr 2.2fr;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    grid-template-areas:
+      "picture name name"
+      "picture stars stars"
+      "picture text text";
+    grid-area: sauce5;
+  }
+  
+ 
+  
+  .sauce6 {  display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 0.3fr 0.5fr 2.2fr;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    grid-template-areas:
+      "picture name name"
+      "picture stars stars"
+      "picture text text";
+    grid-area: sauce6;
+  }
+  
+  
+  .sauce7 {  display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 0.3fr 0.5fr 2.2fr;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    grid-template-areas:
+      "picture name name"
+      "picture stars stars"
+      "picture text text";
+    grid-area: sauce7;
+  }
+  
+
+  
+  .sauce8 {  display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 0.3fr 0.5fr 2.2fr;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    grid-template-areas:
+      "picture name name"
+      "picture stars stars"
+      "picture text text";
+    grid-area: sauce8;
+  }
+  
+  
+  
+  .sauce9 {  display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 0.3fr 0.5fr 2.2fr;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    grid-template-areas:
+      "picture name name"
+      "picture stars stars"
+      "picture text text";
+    grid-area: sauce9;
+  }
+
+  
