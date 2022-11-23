@@ -1,11 +1,24 @@
 * {box-sizing:border-box}
 
+body{
+	margin: 0;
+	background-color: black;	
+	color: grey;
+}
+
+h1{color: grey;
+ text-align: center;
+}
+}
+
+div{display: block;}
 /* Slideshow container */
 .slideshow-container {
   max-width: 800px;
   position: relative;
   margin: auto;
 }
+
 
 /* Hide the images by default */
 .mySlides {
@@ -84,4 +97,25 @@
 @keyframes fade {
   from {opacity: .4}
   to {opacity: 1}
+}
+
+.bck {
+	background: url("pildid/bck.jpg");
+	background-color: #cccccc;	
+    background-attachment: fixed;
+	background-size: cover;
+	background-position: center; 
+	background-repeat: no-repeat;
+	height: 1280px;
+    width: auto;
+	
+}
+
+.store {
+	background: url("pildid/store.jpg");
+	background-color: #cccccc;
+	height: 1280px;
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center; 
 }
