@@ -1,16 +1,17 @@
+
+
+
+
+
 .container {  display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: repeat(6, 1fr);
     gap: 0px 0px;
     grid-auto-flow: row;
     grid-template-areas:
-      "top top top"
-      "intro intro intro"
       "sauce1 sauce2 sauce3"
       "sauce4 sauce5 sauce6"
       "sauce7 sauce8 sauce9"
-      "bottom bottom bottom"
-      
       ;
   }
   
