@@ -1,13 +1,13 @@
-
-
-
-
+.text_katse { grid-area: text; color: black; font-family:Arial, Helvetica, sans-serif}
 
 .container {  display: grid;
     grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: repeat(6, 1fr);
-    gap: 0px 0px;
+    grid-template-rows: repeat(3, 1fr);/* Ma ei ole kindel, kas käsk eemaldada või mitte */
+    gap: 20px 20px;
+    padding: 30px;
     grid-auto-flow: row;
+    
+    /* overflow: hidden; */
     grid-template-areas:
       "sauce1 sauce2 sauce3"
       "sauce4 sauce5 sauce6"
@@ -17,33 +17,61 @@
   
   .sauce1 {  display: grid;
     grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: 0.3fr 0.5fr 2.2fr;
-    gap: 0px 0px;
+    grid-template-rows: 0.1fr 0.1fr 3.0fr;
+    gap: 5px 5px;
+    margin-top: 0%;
+    border: 5px solid aliceblue;
+    background-color: honeydew;
+    border-radius: 25px;
+    overflow: hidden;
     grid-auto-flow: row;
     grid-template-areas:
       "picture Name Name"
-      "picture stars stars"
+      "picture stars empty "
       "picture text text";
     grid-area: sauce1;
    /*  border: 15px solid black; */
   }
   
-  .picture { grid-area: picture; }
+  .picture { grid-area: picture;
+    display: flex;
+    border-right: 4px solid black; /* võibolla eemaldada võibolla mitte */
+     /* background-color: aqua; */
+     /* max-width: 100%;
+     max-height: 100%; */
+     }
+  .picture img {
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: cover;
+    
+    
   
-  .Name { grid-area: Name; }
+
+  }
   
-  .stars { grid-area: stars; }
+  .Name { grid-area: Name;}
   
-  .text { grid-area: text; }
+  .stars { grid-area: stars;}
+  .stars img{
+    max-width: 100%;
+    max-height: 100%;    
+  }
+  
+  .text_g { grid-area: text; color: black;}
   
   .sauce2 {  display: grid;
     grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: 0.3fr 0.5fr 2.2fr;
-    gap: 0px 0px;
+    grid-template-rows: 0.1fr 0.1fr 3.0fr;
+    gap: 5px 5px;
     grid-auto-flow: row;
+    border: 5px solid whitesmoke;
+    background-color: honeydew;
+    border-radius: 25px;
+    overflow: hidden;
     grid-template-areas:
       "picture name name"
-      "picture stars stars"
+      "picture stars empty"
       "picture text text";
     grid-area: sauce2;
   }
@@ -52,12 +80,16 @@
   
   .sauce3 {  display: grid;
     grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: 0.3fr 0.5fr 2.2fr;
-    gap: 0px 0px;
+    grid-template-rows: 0.1fr 0.1fr 3.0fr;
+    gap: 5px 5px;
     grid-auto-flow: row;
+    border: 5px solid whitesmoke;
+    background-color: honeydew;
+    border-radius: 25px;
+    overflow: hidden;
     grid-template-areas:
       "picture name name"
-      "picture stars stars"
+      "picture stars empty"
       "picture text text";
     grid-area: sauce3;
   }
@@ -66,12 +98,17 @@
   
   .sauce4 {  display: grid;
     grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: 0.3fr 0.5fr 2.2fr;
-    gap: 0px 0px;
-    grid-auto-flow: row;
+    grid-template-rows: 0.1fr 0.1fr 3.0fr;
+    gap: 5px 5px;
+    grid-auto-flow: row;    
+    border: 5px solid whitesmoke;
+    background-color: honeydew;
+
+    border-radius: 25px;
+    overflow: hidden;
     grid-template-areas:
       "picture name name"
-      "picture stars stars"
+      "picture stars empty"
       "picture text text";
     grid-area: sauce4;
   }
@@ -80,12 +117,18 @@
   
   .sauce5 {  display: grid;
     grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: 0.3fr 0.5fr 2.2fr;
-    gap: 0px 0px;
+    grid-template-rows: 0.1fr 0.1fr 3.0fr;
+    gap: 5px 5px;
     grid-auto-flow: row;
+    border: 5px solid whitesmoke;
+    background-color: honeydew;
+
+    border-radius: 25px;
+    overflow: hidden;
+
     grid-template-areas:
       "picture name name"
-      "picture stars stars"
+      "picture stars empty"
       "picture text text";
     grid-area: sauce5;
   }
@@ -94,12 +137,17 @@
   
   .sauce6 {  display: grid;
     grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: 0.3fr 0.5fr 2.2fr;
-    gap: 0px 0px;
+    grid-template-rows: 0.1fr 0.1fr 3.0fr;
+    gap: 5px 5px;
     grid-auto-flow: row;
+    border: 5px solid whitesmoke;
+    background-color: honeydew;
+
+    border-radius: 25px;
+    overflow: hidden;
     grid-template-areas:
       "picture name name"
-      "picture stars stars"
+      "picture stars empty"
       "picture text text";
     grid-area: sauce6;
   }
@@ -107,12 +155,17 @@
   
   .sauce7 {  display: grid;
     grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: 0.3fr 0.5fr 2.2fr;
-    gap: 0px 0px;
+    grid-template-rows: 0.1fr 0.1fr 3.0fr;
+    gap: 5px 5px;
     grid-auto-flow: row;
+    border: 5px solid whitesmoke;
+    background-color: honeydew;
+
+    border-radius: 25px;
+    overflow: hidden;
     grid-template-areas:
       "picture name name"
-      "picture stars stars"
+      "picture stars empty"
       "picture text text";
     grid-area: sauce7;
   }
@@ -121,12 +174,17 @@
   
   .sauce8 {  display: grid;
     grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: 0.3fr 0.5fr 2.2fr;
-    gap: 0px 0px;
+    grid-template-rows: 0.1fr 0.1fr 3.0fr;
+    gap: 5px px;
     grid-auto-flow: row;
+    border: 5px solid whitesmoke;
+    background-color: honeydew;
+
+    border-radius: 25px;
+    overflow: hidden;
     grid-template-areas:
       "picture name name"
-      "picture stars stars"
+      "picture stars empty"
       "picture text text";
     grid-area: sauce8;
   }
@@ -135,12 +193,18 @@
   
   .sauce9 {  display: grid;
     grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: 0.3fr 0.5fr 2.2fr;
+    grid-template-rows: 0.1fr 0.1fr 3.0fr;
     gap: 0px 0px;
     grid-auto-flow: row;
+    border: 5px solid whitesmoke;
+    background-color: honeydew;
+
+    border-radius: 25px;
+    overflow: hidden;
+
     grid-template-areas:
       "picture name name"
-      "picture stars stars"
+      "picture stars empty"
       "picture text text";
     grid-area: sauce9;
   }
