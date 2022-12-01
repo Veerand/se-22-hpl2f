@@ -8,62 +8,33 @@
     font-size: large;
     color: blue;
   }
-.nav_img{
+.nav img{
   max-width: 5%;
   max-height: 5%;
-  
 }
 /* Navigation menu/navigation bar */
 .nav {
   background-color: olivedrab;
-  display: block;
+  display: flex;
   overflow: hidden;
-/*   align-items: center;
- */ 
-
- /*  list-style-type:; */
-  margin: 0;
-  padding: 0;
+  align-items: center;
+ 
   
 }
 
 
-
-/* vasak osa */
-.li_vasak{
-  float: left;
-  
-}
-/* parem osa */
-.li_parem{
+.nav_font{
+  font-size: large;
+  color: blue;
   float: right;
 }
-/* nav listi käitumine */
-.nav li {
-  display: inline-block;
-}
-/* Hüüdlause */
-.nav div {
-color: red;
-}
-
-
-
-.nav_log{
-  display: inline-block;
-  float: left;
-
-}
-
-/*Nav linkide stiil  */
+/* linkide stiil nav baris */
 .nav a{
 
-  
   color: aqua;
-  display: block;
-  list-style-type: none;
-  /* text-align: center; */
-  /* padding: 14px	16px; */
+  display: block; /* ma ei ole leidnud probleeme, mis tuleneksid selle käsu eemaldamisest, ja text-align eemaldamisel, aga ma ei julge teda otseselt eemaldada ka. Olen suht kindel, et se muutub oluliseks ainult siis, kui tahame nav bari muud teksti lisada, mis ei ole lingid */
+  text-align: center;
+  padding: 14px	16px;
   text-decoration: none;
 }
 
