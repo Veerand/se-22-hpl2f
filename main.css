@@ -1,17 +1,24 @@
-/* Header */
-.header{
-  padding: 30px;
-  text-align: center;
-  background: orange;
+
+
+/* Logo link frontpage */
+.logo a{
+  display: block;
+ width: 63.13px;
+  height: 63.13px;
+  background: url(pildid/logo.png);
+  background-size: 63.13px 63.13px;
+  
   }
-  .header_font{
-    font-size: large;
-    color: blue;
-  }
-.nav img{
-  max-width: 63.13px;
-  max-height: 63.13px;
+
+  /* logo div */
+.logo{
+  display: block;
+  padding-left: 20px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  padding-right: 20px;
 }
+
 /* Navigation menu/navigation bar */
 .nav {
   background-color: olivedrab;
@@ -34,16 +41,12 @@
   color: aqua;
   display: block; /* ma ei ole leidnud probleeme, mis tuleneksid selle käsu eemaldamisest, ja text-align eemaldamisel, aga ma ei julge teda otseselt eemaldada ka. Olen suht kindel, et se muutub oluliseks ainult siis, kui tahame nav bari muud teksti lisada, mis ei ole lingid */
   text-align: center;
- /*  padding: 14px	16px */;
- padding: 23.433px 20px 23.433px 20px;
+
+ padding: 28.433px 20px 28.433px 20px;
   text-decoration: none;
 }
 
-/* Mis värvi on link ja background kui hiirega peal hoverida */
-.nav a:hover{
-  background-color: #ddd;
-  color:  black;
-}
+
 
 .footer {
   background-color: lightblue;
@@ -66,7 +69,13 @@
 .nav ul{margin-left: auto;
 margin-top: 0%
 ;
+list-style: none;
 margin-bottom: 0%;}
+
+.nav ul :hover{
+  background-color: #ddd;
+  color:  black;
+}
 /* -------------------------------------- */
 * {box-sizing:border-box}
 
