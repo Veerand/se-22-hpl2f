@@ -9,8 +9,8 @@
     color: blue;
   }
 .nav img{
-  max-width: 5%;
-  max-height: 5%;
+  max-width: 63.13px;
+  max-height: 63.13px;
 }
 /* Navigation menu/navigation bar */
 .nav {
@@ -34,7 +34,8 @@
   color: aqua;
   display: block; /* ma ei ole leidnud probleeme, mis tuleneksid selle käsu eemaldamisest, ja text-align eemaldamisel, aga ma ei julge teda otseselt eemaldada ka. Olen suht kindel, et se muutub oluliseks ainult siis, kui tahame nav bari muud teksti lisada, mis ei ole lingid */
   text-align: center;
-  padding: 14px	16px;
+ /*  padding: 14px	16px */;
+ padding: 23.433px 20px 23.433px 20px;
   text-decoration: none;
 }
 
@@ -62,7 +63,10 @@
 }
 
 /* Liigutab lingid paremale. Ilma naljata. */
-.nav ul{margin-left: auto;}
+.nav ul{margin-left: auto;
+margin-top: 0%
+;
+margin-bottom: 0%;}
 /* -------------------------------------- */
 * {box-sizing:border-box}
 
