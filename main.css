@@ -95,9 +95,6 @@ body{
 	color: grey;
 }
 
-/* h1{color: grey;
- text-align: center;
-} */
 
 h1 {
 font-family: Arial, Helvetica, sans-serif;
@@ -107,7 +104,8 @@ font-family: Arial, Helvetica, sans-serif;
 
 
 div{display: block;}
-/* Slideshow container */
+
+/* Slideshow container, üldiselt kasutan default kommentaare*/
 .slideshow-container {
   max-width: 800px;
   position: relative;
@@ -183,34 +181,34 @@ div{display: block;}
   background-color: #717171;
 }
 
-/* Fading animation */
+/* Fading animation - uus pilt tuleb ühtlaselt sisse, siin on määratud tüüp, aeg ning edasi see mis tasemelt. */
 .fade {
   animation-name: fade;
-  animation-duration: 1.5s;
+  animation-duration: 2.5s;
 }
 
 @keyframes fade {
   from {opacity: .4}
   to {opacity: 1}
 }
+/* taustapiltide klassid, kasutan placeholderit ühise osa jaoks*/
 
-.bck {
-	background: url("pildid/bck.jpg");
+%bck {
 	background-color: #cccccc;	
-    background-attachment: fixed;
-	background-size: cover;
 	background-position: center; 
 	background-repeat: no-repeat;
-	height: 1280px;
-    width: auto;
+	
+}
+.flame {
+	@extend %bck;
+	background: url("pildid/bck.jpg");
+    background-attachment: fixed;
 	
 }
 
 .store {
+	@extend %bck;
 	background: url("pildid/store.jpg");
-	background-color: #cccccc;
 	height: 1280px;
-	background-repeat: no-repeat;
 	background-size: cover;
-	background-position: center; 
 }
