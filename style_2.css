@@ -1,4 +1,14 @@
-.text_katse { grid-area: text; color: black; font-family:Arial, Helvetica, sans-serif}
+
+h2{
+  color: black;
+  font-size: 18px;
+  padding: 2px 2px 2px 2px;
+  margin: 0 0 0 0;
+  font-family:Arial, Helvetica, sans-serif;
+}
+
+
+
 
 .container {  display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -14,6 +24,7 @@
       "sauce7 sauce8 sauce9";
   }
   
+
   
   .sauce1 {  display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -26,7 +37,7 @@
     overflow: hidden;
     grid-auto-flow: row;
     grid-template-areas:
-      "picture Name Name"
+      "picture name name"
       "picture stars empty "
       "picture text text";
     grid-area: sauce1;
@@ -36,9 +47,7 @@
   .picture { grid-area: picture;
     display: flex;
     border-right: 4px solid black; /* võibolla eemaldada võibolla mitte */
-     /* background-color: aqua; */
-     /* max-width: 100%;
-     max-height: 100%; */
+     
      }
   .picture img {
     max-width: 100%;
@@ -50,7 +59,7 @@
 
   }
   
-  .Name { grid-area: Name;}
+  .name { grid-area: name;}
   
   .stars { grid-area: stars;}
   .stars img{
@@ -58,7 +67,7 @@
     max-height: 100%;    
   }
   
-  .text_g { grid-area: text; color: black;}
+  .text_g { grid-area: text; color: black;font-family:Arial, Helvetica, sans-serif; line-height: 22px;}
   
   .sauce2 {  display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -160,7 +169,6 @@
     grid-auto-flow: row;
     border: 5px solid whitesmoke;
     background-color: honeydew;
-
     border-radius: 25px;
     overflow: hidden;
     grid-template-areas:

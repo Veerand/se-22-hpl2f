@@ -10,62 +10,49 @@
     <link rel="stylesheet" href="main.css" />
   </head>
   <body>
-    <!-- <div class="header">
-      <div class="header_font">Kuumimad kastmed</div>
-    </div> -->
+    <!-- -------NAV----- -->
     <div class="nav">
       <div class="logo">
         <a href="index.html"></a>
       </div>
-      <div class="nav_font">Maarjamaa kuumimad kastmed</div>
+      <div class="huudlause">Maarjamaa kuumimad kastmed</div>
       <ul>
-        <li><a href="index.html">Link1</a></li>
-        <li><a href="leht_2.html">Link2</a></li>
-        <li><a href="leht_3.html">Link3</a></li>
+        <li><a href="leht_3.html">Galerii</a></li>
+        <li><a href="leht_2.html">Arvustused</a></li>
+        <li><a href="index.html">Koduleht</a></li>
       </ul>
     </div>
-    
-      <div class="full-img" id="fullImgBox">
-        <img src="pildid/sauce_1.jpg" id="fullImg">
-        <span onclick="closeFullImg()">X</span>
-      </div>
+    <div class="title"><h1>Galerii</h1></div>
+
+    <div class="full-img" id="fullImgBox">
+      <img src="pildid/sauce_1.jpg" id="fullImg" />
+      <span onclick="closeFullImg()">X</span>
+    </div>
 
     <div class="img-gallery">
-        <img src="pildid/sauce_1.jpg" onclick="openFullImg(this.src)">
-        <img src="pildid/sauce_2.jpg" onclick="openFullImg(this.src)">
-        <img src="pildid/sauce_3.jpg" onclick="openFullImg(this.src)">
-        <img src="pildid/sauce_4.jpg" onclick="openFullImg(this.src)">
-        <img src="pildid/sauce_5.jpg" onclick="openFullImg(this.src)">
-        <img src="pildid/sauce_6.jpg" onclick="openFullImg(this.src)">
-        <img src="pildid/sauce_7.jpg" onclick="openFullImg(this.src)">
-        <img src="pildid/sauce_8.jpg" onclick="openFullImg(this.src)">
-        <img src="pildid/sauce_9.jpg" onclick="openFullImg(this.src)">
+      <img src="pildid/sauce_1.jpg" onclick="openFullImg(this.src)" />
+      <img src="pildid/sauce_2.jpg" onclick="openFullImg(this.src)" />
+      <img src="pildid/sauce_3.jpg" onclick="openFullImg(this.src)" />
+      <img src="pildid/sauce_4.jpg" onclick="openFullImg(this.src)" />
+      <img src="pildid/sauce_5.jpg" onclick="openFullImg(this.src)" />
+      <img src="pildid/sauce_6.jpg" onclick="openFullImg(this.src)" />
+      <img src="pildid/sauce_7.jpg" onclick="openFullImg(this.src)" />
+      <img src="pildid/sauce_8.jpg" onclick="openFullImg(this.src)" />
+      <img src="pildid/sauce_9.jpg" onclick="openFullImg(this.src)" />
     </div>
- <script>
-    var fullImgBox = document.getElementById("fullImgBox");
-    var fullImg = document.getElementById("fullImg");
+    <script>
+      var fullImgBox = document.getElementById("fullImgBox");
+      var fullImg = document.getElementById("fullImg");
 
-    function openFullImg(pic) {
-      fullImgBox.style.display = "flex";
-      fullImg.src = pic;
-    }
+      function openFullImg(pic) {
+        fullImgBox.style.display = "flex";
+        fullImg.src = pic;
+      }
 
-    function closeFullImg(){
-      fullImgBox.style.display = "none";
-    }
-
- </script>
-
-
-
-
-
-
-
-
-
-
-
+      function closeFullImg() {
+        fullImgBox.style.display = "none";
+      }
+    </script>
 
     <div class="footer">
       <div>Turu 2, Tartu</div>
