@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <script src="image.js"></script>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Galerii</title>
+    <link rel="stylesheet" href="style_3.css" />
+    <link rel="stylesheet" href="main.css" />
+  </head>
+  <body>
+    <!-- -------NAV----- -->
+    <div class="nav">
+      <div class="logo">
+        <a href="index.html"></a>
+      </div>
+      <div class="huudlause">Maarjamaa kuumimad kastmed</div>
+      <ul>
+        <li><a href="leht_4.html">Meist</a></li>
+        <li><a href="leht_3.html">Galerii</a></li>
+        <li><a href="leht_2.html">Arvustused</a></li>
+        <li><a href="index.html">Koduleht</a></li>
+      </ul>
+    </div>
+    <div class="title"><h1>Galerii</h1></div>
+
+    <div class="full-img" id="fullImgBox">
+      <img src="pildid/sauce_1.jpg" id="fullImg" alt="" />
+      <span onclick="closeFullImg()">X</span>
+    </div>
+
+    <div class="img-gallery">
+      <img src="pildid/sauce_1.jpg" onclick="openFullImg(this.src)" alt=""/>
+      <img src="pildid/sauce_2.jpg" onclick="openFullImg(this.src)" alt=""/>
+      <img src="pildid/sauce_3.jpg" onclick="openFullImg(this.src)" alt=""/>
+      <img src="pildid/sauce_4.jpg" onclick="openFullImg(this.src)" alt=""/>
+      <img src="pildid/sauce_5.jpg" onclick="openFullImg(this.src)" alt=""/>
+      <img src="pildid/sauce_6.jpg" onclick="openFullImg(this.src)" alt=""/>
+      <img src="pildid/sauce_7.jpg" onclick="openFullImg(this.src)" alt=""/>
+      <img src="pildid/sauce_8.jpg" onclick="openFullImg(this.src)" alt=""/>
+      <img src="pildid/sauce_9.jpg" onclick="openFullImg(this.src)" alt=""/>
+    </div>
+
+    <div class="footer">
+      <div>Turu 2, Tartu</div>
+      <div>info@maarjamaakk.com</div>
+      <div>+372 668 8100</div>
+    </div>
+  </body>
+</html>
