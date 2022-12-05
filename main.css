@@ -1,4 +1,4 @@
-
+/* ------Navbar------ */
 
 /* Logo link frontpage */
 .logo a{
@@ -7,10 +7,9 @@
   height: 63.13px;
   background: url(pildid/logo.png);
   background-size: 63.13px 63.13px;
-  
-  }
+}
 
-  /* logo div */
+/* logo div */
 .logo{
   display: block;
   padding-left: 20px;
@@ -19,51 +18,64 @@
   padding-right: 20px;
 }
 
+/* Hüüdlause */
+.huudlause{
+  font-size: large;
+  color: white;
+  font-family:Arial, Helvetica, sans-serif;
+}
+
+/* Title/pealkiri */
+.title {
+  background-color: orange;
+  display: flex;
+  padding-left: 20px;
+  padding-top: 10px;
+  padding-bottom: 5px; 
+}
+
+
 /* Navigation menu/navigation bar */
 .nav {
   background-color: brown;
   display: flex;
   overflow: hidden;
   align-items: center;
- 
-  
 }
 
-
-.huudlause{
-  font-size: large;
-  color: white;
-  font-family:Arial, Helvetica, sans-serif;
-  
-}
 /* linkide stiil nav baris */
 .nav a{
-
   color: white;
-  display: block; /* ma ei ole leidnud probleeme, mis tuleneksid selle käsu eemaldamisest, ja text-align eemaldamisel, aga ma ei julge teda otseselt eemaldada ka. Olen suht kindel, et se muutub oluliseks ainult siis, kui tahame nav bari muud teksti lisada, mis ei ole lingid */
+  display: block;
   text-align: center;
-
- padding: 28.433px 20px 28.433px 20px;
+  padding: 28.433px 20px 28.433px 20px;
   text-decoration: none;
 }
 
-.title {
-  background-color: orange;
-  display: flex;
-  padding-left: 20px;
-  padding-top: 10px;
-  padding-bottom: 5px;
-  
+.nav li{float: right;
 }
 
+.nav ul{margin-left: auto;
+  margin-top: 0%;
+  list-style: none;
+  margin-bottom: 0%;
+}
+.nav ul :hover{
+  background-color: red;
+  color:  white;
+}
+
+
+
+
+
+/* ------Footer------ */
 .footer {
   background-color: brown;
   padding: 10px;
   text-align: left;
   color: white;
   font-family:Arial, Helvetica, sans-serif;
-  ;
-  
 }
 
 .footer div {
@@ -71,22 +83,8 @@
   padding: 20px;
 }
 
-/* ------------------------------------- */
-.nav li{float: right;
-}
+/* ------ */
 
-/* Liigutab lingid paremale. Ilma naljata. */
-.nav ul{margin-left: auto;
-margin-top: 0%
-;
-list-style: none;
-margin-bottom: 0%;}
-
-.nav ul :hover{
-  background-color: red;
-  color:  white;
-}
-/* -------------------------------------- */
 * {box-sizing:border-box}
 
 body{

@@ -1,23 +1,12 @@
 
-h2{
-  color: black;
-  font-size: 18px;
-  padding: 2px 2px 2px 2px;
-  margin: 0 0 0 0;
-  font-family:Arial, Helvetica, sans-serif;
-}
-
-
-
-
+/* Lehe grid */
 .container {  display: grid;
     grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: repeat(3, 1fr);/* Ma ei ole kindel, kas käsk eemaldada või mitte */
+    grid-template-rows: repeat(3, 1fr);
     gap: 20px 20px;
     padding: 30px;
     grid-auto-flow: row;
     
-    /* overflow: hidden; */
     grid-template-areas:
       "sauce1 sauce2 sauce3"
       "sauce4 sauce5 sauce6"
@@ -26,6 +15,41 @@ h2{
   
 
   
+
+  /* Kastmete grid alade omadused */
+  .picture { grid-area: picture;
+    display: flex;
+    border-right: 4px solid black;
+     
+     }
+  .picture img {
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: cover;
+  }
+  
+  .name { grid-area: name;}
+  
+  .stars { grid-area: stars;}
+
+  .stars img{
+    max-width: 100%;
+    max-height: 100%;    
+  }
+  
+  .text_g { grid-area: text; color: black;font-family:Arial, Helvetica, sans-serif; line-height: 22px;}
+  
+  h2{
+    color: black;
+    font-size: 18px;
+    padding: 2px 2px 2px 2px;
+    margin: 0 0 0 0;
+    font-family:Arial, Helvetica, sans-serif;
+  }
+
+
+  
+  /* Kastmete gridid */
   .sauce1 {  display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: 0.1fr 0.1fr 3.0fr;
@@ -41,34 +65,11 @@ h2{
       "picture stars empty "
       "picture text text";
     grid-area: sauce1;
-   /*  border: 15px solid black; */
   }
-  
-  .picture { grid-area: picture;
-    display: flex;
-    border-right: 4px solid black; /* võibolla eemaldada võibolla mitte */
-     
-     }
-  .picture img {
-    max-width: 100%;
-    max-height: 100%;
-    object-fit: cover;
-    
-    
-  
 
-  }
-  
-  .name { grid-area: name;}
-  
-  .stars { grid-area: stars;}
-  .stars img{
-    max-width: 100%;
-    max-height: 100%;    
-  }
-  
-  .text_g { grid-area: text; color: black;font-family:Arial, Helvetica, sans-serif; line-height: 22px;}
-  
+
+
+
   .sauce2 {  display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: 0.1fr 0.1fr 3.0fr;
