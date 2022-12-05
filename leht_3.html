@@ -2,10 +2,10 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
+    <script src="image.js"></script>
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Galerii</title>
-    <link rel="stylesheet" href="style_2.css" />
     <link rel="stylesheet" href="style_3.css" />
     <link rel="stylesheet" href="main.css" />
   </head>
@@ -41,19 +41,6 @@
       <img src="pildid/sauce_8.jpg" onclick="openFullImg(this.src)" alt=""/>
       <img src="pildid/sauce_9.jpg" onclick="openFullImg(this.src)" alt=""/>
     </div>
-    <script>
-      var fullImgBox = document.getElementById("fullImgBox");
-      var fullImg = document.getElementById("fullImg");
-
-      function openFullImg(pic) {
-        fullImgBox.style.display = "flex";
-        fullImg.src = pic;
-      }
-
-      function closeFullImg() {
-        fullImgBox.style.display = "none";
-      }
-    </script>
 
     <div class="footer">
       <div>Turu 2, Tartu</div>
