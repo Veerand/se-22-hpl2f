@@ -6,7 +6,7 @@
     gap: 20px 20px;
     padding: 30px;
     grid-auto-flow: row;
-    
+    color: black;
     grid-template-areas:
       "sauce1 sauce2 sauce3"
       "sauce4 sauce5 sauce6"
@@ -37,14 +37,14 @@
     max-height: 100%;    
   }
   
-  .text_g { grid-area: text; color: black;font-family:Arial, Helvetica, sans-serif; line-height: 22px;}
+  .text_g { grid-area: text; 
+    line-height: 22px;
+  }
   
-  h2{
-    color: black;
+  .name h2{
     font-size: 18px;
     padding: 2px 2px 2px 2px;
     margin: 0 0 0 0;
-    font-family:Arial, Helvetica, sans-serif;
   }
 
 
