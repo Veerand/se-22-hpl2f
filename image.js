@@ -1,9 +1,10 @@
-//elementide initsialiseerimine
-var fullImgBox = document.getElementById("fullImgBox");
-var fullImg = document.getElementById("fullImg");
+
 
 //pildi reageerimine
 function openFullImg(pic) {
+//elementide initsialiseerimine
+var fullImgBox = document.getElementById("fullImgBox");
+var fullImg = document.getElementById("fullImg");
 fullImgBox.style.display = "flex";
 fullImg.src = pic;
 }
